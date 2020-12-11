@@ -1,0 +1,4 @@
+
+
+gcloud builds submit --project=sonorous-zone-294814 --tag gcr.io/sonorous-zone-294814/card-reader-app
+gcloud run deploy --project=sonorous-zone-294814 --image gcr.io/sonorous-zone-294814/card-reader-app --platform managed --add-cloudsql-instances=['sonorous-zone-294814:europe-west3:card-reader-aac9d6a4'] --region europe-west3
